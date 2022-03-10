@@ -18,27 +18,68 @@ header{
     justify-content: space-between;
 }
 
-header h2{
-    font-size: 4.2vh;
-    margin-right: 20vh;
-}
-
 .header-logo{
     display: flex;
-    width: 25vw;
-    justify-content: space-around;
+    width: 19vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 5.5vh;
+    cursor: pointer;
+}
+
+.header-logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-img{
+    width: 35%;
+}
+
+.header-name{
+    font-size: 4.2vh;
 }
 
 .header-menu{
     display: flex;
-    margin-right: 7vh;
+    margin-right: 9vh;
     justify-content: space-between;
 }
 
-.header-img{
-    width: 24%;
+.header-option{
+    margin: 1vh;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.header-option:hover{
+    transition: 0.1s;
+}
+
+.header-menu a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after{
+    width: 100%; 
+    left: 0; 
 }
 
 .div-body{
@@ -78,44 +119,10 @@ header h2{
     background-color: rgb(175, 0, 175);
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-size: large;
+    font-size: 70%;
 }   
 
 .purple-button:hover{
     background-color: rgb(133, 0, 133);
     transition: 0.2s;
-}
-
-.header-option{
-    margin: 1vh;
-    cursor: pointer;
-}
-
-.header-option:hover{
-    transition: 0.1s;
-}
-
-a{
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-a:after{
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-a:hover:after{
-    width: 100%; 
-    left: 0; 
 }
