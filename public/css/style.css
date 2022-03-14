@@ -24,11 +24,11 @@ header{
 .header-logo{
     display: flex;
     width: 19vw;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     margin-left: 5.5vh;
     cursor: pointer;
+    margin-left: 6vw;
 }
 
 .header-logo a{
@@ -37,11 +37,12 @@ header{
 }
 
 .header-img{
-    width: 35%;
+    width: 30%;
 }
 
 .header-name{
     font-size: 3.2vh;
+    margin-left: 15px;
 }
 
 .header-menu{
@@ -131,3 +132,4 @@ a:hover:after{
     background-color: rgb(133, 0, 133);
     transition: 0.2s;
 }
+
