@@ -48,18 +48,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100%;    
     
 }
 .card-segunda-01{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     padding: 10px 10px;
     border-radius: 10px;
     background-color: rgba(0, 49, 64, 1);
     color: #fff;
     
+}
+
+h1 {
+    color: rgba(0, 49, 64, 1);
 }
 .card-box{
     display: flex;
