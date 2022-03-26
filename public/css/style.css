@@ -20,13 +20,13 @@ body{
 
 header{
     display: flex;
-    width: 97.9%;
+    width: 98%;
     height: 8vh;
     /* background-color: rgb(100, 0, 100); */
     background-image: linear-gradient(to right, rgb(196, 0, 196), rgb(116, 0, 116));
     color: white;
     align-items: center;
-    padding: 2.5vh;
+    padding: 2vh;
     font-size: large;
     justify-content: space-between;
 }
@@ -104,10 +104,12 @@ a:hover:after{
     width: 100vw;
     animation: fadeIn 1.7s;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .div-body::-webkit-scrollbar-thumb{
     background-color: rgb(116, 0, 116);
+    border-radius: 1vh;
 }
 
 .div-body::-webkit-scrollbar-thumb:hover{
@@ -115,7 +117,8 @@ a:hover:after{
 }
 
 .div-body::-webkit-scrollbar{
-    width: 1.5vh;
+    width: 1.2vh;
+    background-color: rgb(68, 0, 68);
 }
 
 .footer{
@@ -133,7 +136,7 @@ a:hover:after{
     display: flex;
     justify-content: space-evenly;
     margin: 0 0;
-    width: 100%;
+    width: 101.5%;
     height: 100%;
     font-size: 27px;
 }
@@ -147,18 +150,6 @@ a:hover:after{
 
 .fotoChef{
     width: 50%;
-}
-
-.div-right-body{
-    display: flex;
-    justify-content: center;
-    width: 80vw;
-    height: 98vh;
-}
-
-.div-right-body img{
-    width: 20h;
-    height: 90vh;
 }
 
 .purple-button{
@@ -183,4 +174,31 @@ a:hover:after{
     flex-direction: column;
     overflow:scroll;
     height: 100vw;
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .purple-button{
+        width: 20vh;
+        height: 7vh;
+        padding: 10px 10px;
+        border-radius: 1vh;
+        border: 0;
+        background-color: rgb(175, 0, 175);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 70%;
+    }       
+
+    .footer{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        height: 7vh;
+        width: 99.5vw;
+        color: white;
+    }
+
 }
