@@ -20,7 +20,7 @@ body{
 
 header{
     display: flex;
-    width: 98%;
+    width: 98.7%;
     height: 8vh;
     /* background-color: rgb(100, 0, 100); */
     background-image: linear-gradient(to right, rgb(196, 0, 196), rgb(116, 0, 116));
